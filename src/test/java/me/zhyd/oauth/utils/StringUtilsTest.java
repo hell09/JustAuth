@@ -5,6 +5,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import me.zhyd.oauth.utils.StringUtils;
+
 public class StringUtilsTest {
     @Rule
     public final ExpectedException thrown =

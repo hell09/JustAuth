@@ -232,7 +232,7 @@
       </distributionManagement>
     </profile>
     <!--私服-->
-    <profile>
+    <!-- <profile>
       <id>nexus</id>
       <build>
         <plugins>
@@ -261,6 +261,6 @@
           <url>https://nexus.xkcoding.com/repository/maven-snapshots/</url>
         </snapshotRepository>
       </distributionManagement>
-    </profile>
+    </profile> -->
   </profiles>
 </project>

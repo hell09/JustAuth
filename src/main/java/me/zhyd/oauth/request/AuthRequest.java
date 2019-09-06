@@ -1,5 +1,8 @@
 package me.zhyd.oauth.request;
 
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
+
 import me.zhyd.oauth.enums.AuthResponseStatus;
 import me.zhyd.oauth.exception.AuthException;
 import me.zhyd.oauth.model.AuthCallback;
@@ -50,6 +53,8 @@ public interface AuthRequest {
      * @return 返回登录成功后的用户信息
      */
     default AuthResponse login(AuthCallback authCallback) {
+    	Duration duration = ChronoUnit.DAYS.getDuration();
+    	long seconds = duration.getSeconds();
         throw new AuthException(AuthResponseStatus.NOT_IMPLEMENTED);
     }
 
